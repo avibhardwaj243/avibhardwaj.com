@@ -61,6 +61,17 @@ let webpackConfig = {
 };
 
 webpackConfig.devServer = (devServerConfig) => {
+  // Strip deprecated webpack-dev-server v4 options that CRA 5 still injects
+  // (webpack-dev-server v5 rejects these and refuses to start).
+  delete devServerConfig.onAfterSetupMiddleware;
+  delete devServerConfig.onBeforeSetupMiddleware;
+  if (devServerConfig.https !== undefined) {
+    devServerConfig.server = devServerConfig.https
+      ? { type: 'https' }
+      : devServerConfig.server || { type: 'http' };
+    delete devServerConfig.https;
+  }
+
   // Add health check endpoints if enabled
   if (config.enableHealthCheck && setupHealthEndpoints && healthPluginInstance) {
     const originalSetupMiddlewares = devServerConfig.setupMiddlewares;
