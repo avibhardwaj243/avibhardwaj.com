@@ -1,0 +1,6 @@
+cd /Users/avibhardwaj/projects/avibhardwaj.com-main
+
+ npm install && npm start
+
+run on 
+https://localhost:3001
