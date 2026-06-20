@@ -38,6 +38,14 @@ let webpackConfig = {
     },
     configure: (webpackConfig) => {
 
+      // Remove ForkTsCheckerWebpackPlugin — we use plain JavaScript only.
+      // This plugin ships with an old, broken `ajv-keywords` that crashes on Node 18+.
+      if (webpackConfig.plugins) {
+        webpackConfig.plugins = webpackConfig.plugins.filter(
+          (p) => p && p.constructor && p.constructor.name !== 'ForkTsCheckerWebpackPlugin'
+        );
+      }
+
       // Add ignored patterns to reduce watched directories
         webpackConfig.watchOptions = {
           ...webpackConfig.watchOptions,
