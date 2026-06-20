@@ -8,8 +8,15 @@ export const Footer = () => {
       <div className="max-w-6xl mx-auto px-6 md:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
           <div className="md:col-span-7">
-            <div className="font-heading text-xl font-semibold text-white">
-              <span className="text-blue-400">Avi</span> Bhardwaj
+            <div className="inline-flex items-center">
+              <span className="font-mono text-xl leading-none">
+                <span className="text-zinc-500">{'<'}</span>
+                <span className="text-blue-400 font-semibold">Avi</span>
+                <span className="text-zinc-500">{' />'}</span>
+              </span>
+              <span className="ml-3 font-heading text-xl font-semibold text-white">
+                Bhardwaj
+              </span>
             </div>
             <p className="mt-3 text-sm text-zinc-400 max-w-md leading-relaxed">
               {PROFILE.role} @ {PROFILE.company}. Building scalable FinTech products from{' '}

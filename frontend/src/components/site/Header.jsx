@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { NAV } from '@/constants/testIds';
 import { PROFILE } from '@/data/content';
+import { Logo } from '@/components/site/Logo';
 
 const links = [
   { id: 'about', label: 'About', testid: NAV.about },
@@ -43,9 +44,10 @@ export const Header = () => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
-          className="font-heading text-base font-semibold tracking-tight text-zinc-950"
+          className="inline-flex items-center"
+          aria-label="Avi Bhardwaj — home"
         >
-          <span className="text-blue-600">Avi</span> Bhardwaj
+          <Logo variant="jsx" />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
