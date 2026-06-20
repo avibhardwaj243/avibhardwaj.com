@@ -1,0 +1,128 @@
+{
+  "project_context": {
+    "domain": "Personal Portfolio / Fintech Professional",
+    "theme": "light",
+    "archetype": "4 (Swiss & High-Contrast)",
+    "description": "A highly professional, minimal, and lightweight personal portfolio for Avi Bhardwaj, an Engineering Manager at PaisaBazaar with 16+ years of experience."
+  },
+  "colors": {
+    "background": {
+      "base": "bg-white",
+      "alt": "bg-zinc-50",
+      "glass": "bg-white/70"
+    },
+    "text": {
+      "primary": "text-zinc-950",
+      "secondary": "text-zinc-500",
+      "accent": "text-blue-600",
+      "inverse": "text-white"
+    },
+    "border": {
+      "subtle": "border-zinc-200",
+      "focus": "border-blue-600"
+    },
+    "brand": {
+      "primary": "bg-blue-600",
+      "primary_hover": "bg-blue-700",
+      "accent": "bg-zinc-900",
+      "accent_hover": "bg-zinc-800"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Outfit, sans-serif",
+      "body": "IBM Plex Sans, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "hierarchy": {
+      "h1": "text-5xl md:text-6xl font-bold tracking-tighter text-zinc-950 leading-tight",
+      "h2": "text-3xl md:text-4xl font-semibold tracking-tight text-zinc-950",
+      "h3": "text-xl md:text-2xl font-medium tracking-tight text-zinc-950",
+      "body_lg": "text-lg text-zinc-600 leading-relaxed",
+      "body": "text-base text-zinc-600 leading-relaxed",
+      "label": "text-xs font-semibold tracking-[0.1em] uppercase text-zinc-500"
+    }
+  },
+  "layout_and_spacing": {
+    "container": "max-w-6xl mx-auto px-6 md:px-8",
+    "section_padding": "py-20 md:py-32",
+    "gap_large": "gap-12 md:gap-20",
+    "gap_medium": "gap-6 md:gap-8",
+    "card_padding": "p-6 md:p-8"
+  },
+  "components": {
+    "header": {
+      "style": "sticky top-0 z-50 w-full backdrop-blur-xl bg-white/70 border-b border-zinc-200",
+      "layout": "flex justify-between items-center h-16 max-w-6xl mx-auto px-6"
+    },
+    "hero": {
+      "layout": "grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[80vh]",
+      "text_column": "lg:col-span-7 flex flex-col items-start text-left",
+      "image_column": "lg:col-span-5 relative w-full aspect-[4/5] md:aspect-square overflow-hidden rounded-2xl border border-zinc-200 shadow-sm"
+    },
+    "buttons": {
+      "primary": "inline-flex items-center justify-center rounded-none px-6 py-3 text-sm font-medium transition-colors bg-blue-600 text-white hover:bg-blue-700",
+      "secondary": "inline-flex items-center justify-center rounded-none px-6 py-3 text-sm font-medium transition-colors border border-zinc-200 bg-white hover:bg-zinc-50 hover:text-zinc-900"
+    },
+    "cards": {
+      "base": "group flex flex-col bg-white border border-zinc-200 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+      "image": "aspect-video w-full overflow-hidden bg-zinc-100 mb-6",
+      "title": "text-xl font-medium text-zinc-950 mb-2",
+      "description": "text-sm text-zinc-500 leading-relaxed"
+    },
+    "timeline": {
+      "container": "relative border-l border-zinc-200 ml-3 md:ml-6 space-y-12",
+      "item": "relative pl-8 md:pl-12",
+      "node": "absolute -left-[5px] top-1.5 h-2 w-2 rounded-full bg-blue-600 ring-4 ring-white",
+      "role": "text-xl font-medium text-zinc-950",
+      "company": "text-base font-medium text-blue-600 mt-1",
+      "date": "text-sm font-mono text-zinc-500 mt-2 mb-4",
+      "description": "text-base text-zinc-600 leading-relaxed"
+    },
+    "skills_bento": {
+      "container": "grid grid-cols-1 md:grid-cols-3 gap-6",
+      "item": "bg-white border border-zinc-200 p-8 flex flex-col",
+      "title": "text-lg font-medium text-zinc-950 mb-4",
+      "list": "flex flex-wrap gap-2",
+      "pill": "px-3 py-1 bg-zinc-100 text-zinc-700 text-sm border border-zinc-200/50"
+    }
+  },
+  "motion_interactions": {
+    "hover": "transition-all duration-200 ease-in-out",
+    "focus": "focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2",
+    "image_hover": "group-hover:scale-105 transition-transform duration-500"
+  },
+  "media": [
+    {
+      "category": "hero_avatar",
+      "url": "https://images.unsplash.com/photo-1600878459138-e1123b37cb30?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBwcm9mZXNzaW9uYWwlMjBtYW4lMjBoZWFkc2hvdCUyMGNvcnBvcmF0ZXxlbnwwfHx8fDE3ODE5NTkyNDd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Professional headshot for Avi Bhardwaj in the hero section."
+    },
+    {
+      "category": "hero_background",
+      "url": "https://images.pexels.com/photos/5278940/pexels-photo-5278940.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Abstract white architectural background. Optional: to be used as a subtle section background if needed with high opacity white overlay."
+    },
+    {
+      "category": "project_thumbnail_1",
+      "url": "https://images.pexels.com/photos/7055/desk-computer-imac-home.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Clean workspace for portfolio project visual placeholder."
+    },
+    {
+      "category": "project_thumbnail_2",
+      "url": "https://images.pexels.com/photos/7057/desk-office-computer-imac.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Minimalist computer setup for another portfolio project."
+    }
+  ],
+  "instructions_to_main_agent": [
+    "Ensure all interactive elements have data-testid attributes (e.g., data-testid='contact-submit-btn').",
+    "Use pure HTML and Tailwind for structural layouts like the Hero, Timeline, and Skills bento grids.",
+    "Use standard lucide-react icons for social links (LinkedIn, Email) and UI interactions.",
+    "Customize Shadcn components heavily to remove rounded corners (use rounded-none or rounded-sm max) and remove soft drop shadows. Ensure inputs and textareas have crisp border-zinc-200 borders.",
+    "Implement the Contact form using Shadcn Input, Textarea, and Button. Provide a mock or actual implementation using a tool like Resend if requested, but ensure the UI handles state (loading, success).",
+    "The Work Experience section is critical. Implement a clean, precise vertical timeline matching the 'timeline' component guidelines above. Group roles under 'PaisaBazaar', 'OTS Solutions', 'Vinove', etc.",
+    "For the Hero section image, use the provided 'hero_avatar' URL. Do not use an empty div or placeholder text.",
+    "Maintain strict left alignment for text content to ensure readability and professional presentation.",
+    "Ensure text contrast meets APCA/WCAG standards, especially text-zinc-500 against white backgrounds."
+  ]
+}
