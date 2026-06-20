@@ -63,13 +63,13 @@ export const Header = () => {
 
         <div className="hidden md:block">
           <a
-            href={PROFILE.linkedin}
+            href={PROFILE.resumeUrl}
             target="_blank"
             rel="noreferrer"
             data-testid={NAV.resume}
-            className="inline-flex items-center justify-center rounded-none px-5 py-2.5 text-sm font-medium bg-zinc-950 text-white hover:bg-zinc-800 transition-colors"
+            className="inline-flex items-center gap-2 rounded-none px-5 py-2.5 text-sm font-medium bg-zinc-950 text-white hover:bg-zinc-800 transition-colors"
           >
-            View LinkedIn
+            Download CV
           </a>
         </div>
 
@@ -97,12 +97,12 @@ export const Header = () => {
               </button>
             ))}
             <a
-              href={PROFILE.linkedin}
+              href={PROFILE.resumeUrl}
               target="_blank"
               rel="noreferrer"
               className="mt-2 inline-flex items-center justify-center rounded-none px-5 py-2.5 text-sm font-medium bg-zinc-950 text-white"
             >
-              View LinkedIn
+              Download CV
             </a>
           </div>
         </div>

@@ -9,14 +9,15 @@ export const PROFILE = {
   location: 'Gurugram, India',
   email: 'avibhardwaj243@gmail.com',
   linkedin: 'https://www.linkedin.com/in/avibhardwaj243',
+  resumeUrl: '/avi-bhardwaj-resume.pdf',
+  openTo: ['Engineering leadership roles', 'Advisory', 'Mentoring', 'Speaking'],
   tagline:
     'Engineering leader with 16+ years building scalable, customer-centric FinTech products.',
   bio: [
     "I’m an Engineering Manager at PaisaBazaar with 16+ years of experience in FinTech. I lead engineering teams that ship customer-facing digital lending and credit products used by millions of Indians.",
     "My work sits at the intersection of architecture, production stability and people — driving system design decisions, ensuring high availability, and mentoring engineers to build a high-performing engineering culture.",
   ],
-  avatar:
-    'https://images.unsplash.com/photo-1600878459138-e1123b37cb30?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBwcm9mZXNzaW9uYWwlMjBtYW4lMjBoZWFkc2hvdCUyMGNvcnBvcmF0ZXxlbnwwfHx8fDE3ODE5NTkyNDd8MA&ixlib=rb-4.1.0&q=85',
+  avatar: '/avi-bhardwaj.jpg',
 };
 
 export const STATS = [

@@ -1,4 +1,4 @@
-import { ArrowRight, Linkedin, Mail, MapPin } from 'lucide-react';
+import { ArrowRight, Download, Linkedin, Mail, MapPin } from 'lucide-react';
 import { HERO } from '@/constants/testIds';
 import { PROFILE, STATS } from '@/data/content';
 
@@ -20,6 +20,21 @@ export const Hero = () => {
               <span className="text-zinc-950 font-medium">{PROFILE.company}</span>. {PROFILE.tagline}
             </p>
 
+            <div className="mt-6 inline-flex flex-wrap items-center gap-2">
+              <span className="inline-flex items-center gap-2 text-xs font-mono text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-1">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                Open to
+              </span>
+              {PROFILE.openTo.map((tag) => (
+                <span
+                  key={tag}
+                  className="text-xs font-mono text-zinc-600 bg-white border border-zinc-200 px-2.5 py-1"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+
             <div className="mt-8 flex flex-wrap gap-3">
               <button
                 onClick={() =>
@@ -31,13 +46,13 @@ export const Hero = () => {
                 Get in touch <ArrowRight size={16} />
               </button>
               <a
-                href={PROFILE.linkedin}
+                href={PROFILE.resumeUrl}
                 target="_blank"
                 rel="noreferrer"
                 data-testid={HERO.ctaResume}
                 className="inline-flex items-center gap-2 rounded-none px-6 py-3 text-sm font-medium border border-zinc-200 bg-white hover:bg-zinc-50 text-zinc-900 transition-colors"
               >
-                View LinkedIn <Linkedin size={16} />
+                Download CV <Download size={16} />
               </a>
             </div>
 
