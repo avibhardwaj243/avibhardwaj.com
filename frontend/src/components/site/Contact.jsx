@@ -5,8 +5,8 @@ import { Send, Loader2, Linkedin, Mail } from 'lucide-react';
 import { CONTACT } from '@/constants/testIds';
 import { PROFILE } from '@/data/content';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+const WEB3FORMS_KEY = process.env.REACT_APP_WEB3FORMS_KEY;
+const WEB3FORMS_URL = 'https://api.web3forms.com/submit';
 
 export const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
@@ -24,22 +24,27 @@ export const Contact = () => {
     setLoading(true);
     setSuccess(false);
     try {
-      const res = await axios.post(`${API}/contact`, {
-        name: form.name.trim(),
-        email: form.email.trim(),
-        subject: form.subject.trim() || 'New message from avibhardwaj.com',
-        message: form.message.trim(),
-      });
-      const delivered = res?.data?.delivered;
-      toast.success(
-        delivered
-          ? 'Message sent. I’ll get back to you soon.'
-          : 'Message received. I’ll reply soon.'
+      const subject = form.subject.trim() || 'New message from avibhardwaj.com';
+      await axios.post(
+        WEB3FORMS_URL,
+        {
+          access_key: WEB3FORMS_KEY,
+          name: form.name.trim(),
+          email: form.email.trim(),
+          subject: `[Portfolio] ${subject}`,
+          message: form.message.trim(),
+          from_name: 'avibhardwaj.com',
+          replyto: form.email.trim(),
+          botcheck: '',
+        },
+        { headers: { 'Content-Type': 'application/json', Accept: 'application/json' } }
       );
+      toast.success('Message sent. I’ll get back to you soon.');
       setSuccess(true);
       setForm({ name: '', email: '', subject: '', message: '' });
     } catch (err) {
-      const detail = err?.response?.data?.detail || 'Something went wrong. Please try again.';
+      const detail =
+        err?.response?.data?.message || 'Something went wrong. Please try again.';
       toast.error(detail);
     } finally {
       setLoading(false);
