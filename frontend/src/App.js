@@ -11,6 +11,7 @@ import { Projects } from '@/components/site/Projects';
 import { Writing } from '@/components/site/Writing';
 import { Contact } from '@/components/site/Contact';
 import { Footer } from '@/components/site/Footer';
+import LogoPreview from '@/pages/LogoPreview';
 
 function Portfolio() {
   return (
@@ -36,6 +37,7 @@ function App() {
       <Toaster position="top-right" richColors closeButton />
       <Routes>
         <Route path="/" element={<Portfolio />} />
+        <Route path="/logos" element={<LogoPreview />} />
         <Route path="*" element={<Portfolio />} />
       </Routes>
     </BrowserRouter>
