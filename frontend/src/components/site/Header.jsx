@@ -89,6 +89,7 @@ export const Header = () => {
             {links.map((l) => (
               <button
                 key={l.id}
+                data-testid={l.testid}
                 onClick={() => handleNav(l.id)}
                 className="text-left py-2.5 text-sm text-zinc-700 hover:text-zinc-950"
               >
