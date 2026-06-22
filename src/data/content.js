@@ -9,7 +9,7 @@ export const PROFILE = {
   location: 'Gurugram, India',
   email: 'avibhardwaj243@gmail.com',
   linkedin: 'https://www.linkedin.com/in/avibhardwaj243',
-  substack: 'https://avibhardwaj.substack.com',
+  substack: 'https://avibhardwaj243.substack.com',
   resumeUrl: '/avi-bhardwaj-resume.pdf',
   openTo: ['Engineering leadership roles', 'Advisory', 'Mentoring', 'Speaking'],
   tagline:
