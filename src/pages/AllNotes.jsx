@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, Search, X } from 'lucide-react';
 import { PageShell } from '@/components/site/PageShell';
+import { SEO } from '@/components/site/SEO';
 import { WRITING } from '@/data/content';
 
 export default function AllNotes() {
@@ -55,7 +56,13 @@ export default function AllNotes() {
   };
 
   return (
-    <PageShell eyebrow="Writing" title="Notes from the trenches." backLabel="Back to home">
+    <>
+      <SEO
+        title="Writing & Notes"
+        description="Notes on engineering leadership, architecture and FinTech by Avi Bhardwaj. Search by keyword or filter by tag."
+        path="/notes"
+      />
+      <PageShell eyebrow="Writing" title="Notes from the trenches." backLabel="Back to home">
       <p className="text-lg text-zinc-600 leading-relaxed max-w-2xl mb-10">
         Long-form thoughts on engineering leadership, architecture and FinTech. Search by keyword
         or filter by tag.
@@ -156,6 +163,7 @@ export default function AllNotes() {
         </div>
       )}
     </PageShell>
+    </>
   );
 }
 

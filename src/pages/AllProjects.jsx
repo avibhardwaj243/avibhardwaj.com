@@ -1,13 +1,20 @@
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import { PageShell } from '@/components/site/PageShell';
+import { SEO } from '@/components/site/SEO';
 import { PROJECTS } from '@/data/content';
 
 export default function AllProjects() {
   const sorted = [...PROJECTS].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
 
   return (
-    <PageShell eyebrow="Selected work" title="All projects.">
+    <>
+      <SEO
+        title="All projects"
+        description="A collection of projects Avi Bhardwaj has led or shaped — engineering platforms, partner integrations, and customer experiences in FinTech."
+        path="/projects"
+      />
+      <PageShell eyebrow="Selected work" title="All projects.">
       <p className="text-lg text-zinc-600 leading-relaxed max-w-2xl mb-12">
         Projects I’ve led or shaped over the years. Many details are NDA — happy to share more in
         person.
@@ -51,5 +58,6 @@ export default function AllProjects() {
         ))}
       </div>
     </PageShell>
+    </>
   );
 }

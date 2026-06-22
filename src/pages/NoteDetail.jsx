@@ -2,6 +2,7 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import { Clock } from 'lucide-react';
 import { PageShell } from '@/components/site/PageShell';
 import { Markdown } from '@/components/site/Markdown';
+import { SEO } from '@/components/site/SEO';
 import { WRITING } from '@/data/content';
 
 export default function NoteDetail() {
@@ -11,7 +12,16 @@ export default function NoteDetail() {
   if (!post) return <Navigate to="/notes" replace />;
 
   return (
-    <PageShell eyebrow={post.tag || 'Note'} title={post.title} backLabel="All notes">
+    <>
+      <SEO
+        title={post.title}
+        description={post.excerpt}
+        path={`/notes/${post.slug}`}
+        type="article"
+        publishedAt={post.date}
+        tags={post.tags}
+      />
+      <PageShell eyebrow={post.tag || 'Note'} title={post.title} backLabel="All notes">
       <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-zinc-500 mb-10 -mt-4">
         <span className="font-mono">{formatDate(post.date)}</span>
         {post.readingTime && (
@@ -37,6 +47,7 @@ export default function NoteDetail() {
 
       <Markdown>{post.content}</Markdown>
     </PageShell>
+    </>
   );
 }
 

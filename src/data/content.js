@@ -12,19 +12,19 @@ export const PROFILE = {
   resumeUrl: '/avi-bhardwaj-resume.pdf',
   openTo: ['Engineering leadership roles', 'Advisory', 'Mentoring', 'Speaking'],
   tagline:
-    'Engineering leader with 16+ years building scalable, customer-centric FinTech products.',
+    'Engineering leader with 16+ years overall and 11+ years in FinTech, building scalable, customer-centric products.',
   bio: [
-    "I’m an Engineering Manager at PaisaBazaar with 16+ years of experience in FinTech. I lead engineering teams that ship customer-facing digital lending and credit products used by millions of Indians.",
+    "I’m an Engineering Manager at PaisaBazaar with 16+ years of overall experience and 11+ years in FinTech. I lead engineering teams that ship customer-facing digital lending and credit products used by millions of Indians.",
     "My work sits at the intersection of architecture, production stability and people — driving system design decisions, ensuring high availability, and mentoring engineers to build a high-performing engineering culture.",
   ],
   avatar: '/avi-bhardwaj.jpg',
 };
 
 export const STATS = [
-  { label: 'Years in FinTech', value: '16+' },
-  { label: 'Years at PaisaBazaar', value: '11' },
-  { label: 'Engineers mentored', value: '40+' },
-  { label: 'Production systems owned', value: '12+' },
+  { label: 'Years overall', value: '16+' },
+  { label: 'Years in FinTech', value: '11+' },
+  { label: 'Engineers mentored', value: '20+' },
+  { label: 'Production systems owned', value: '10+' },
 ];
 
 export const SKILLS = [
@@ -168,6 +168,29 @@ export const EXPERIENCE = [
           'Front-end development with HTML, CSS, JavaScript and jQuery. Built responsive interfaces and customised WordPress sites for client projects.',
       },
     ],
+  },
+];
+
+// ---------- AWARDS / RECOGNITION ----------
+// Edit freely. Latest year first.
+export const AWARDS = [
+  {
+    title: 'Star Performer of the Year',
+    org: 'PaisaBazaar',
+    year: '2024',
+    note: 'Recognised for leadership across lending platform modernisation and partner integration framework rollouts.',
+  },
+  {
+    title: 'Excellence in Engineering',
+    org: 'PaisaBazaar',
+    year: '2022',
+    note: 'For sustained contribution to production stability and customer experience improvements across credit journeys.',
+  },
+  {
+    title: 'Spot Award — Customer Impact',
+    org: 'PaisaBazaar',
+    year: '2020',
+    note: 'Led a cross-team initiative that reduced application drop-offs and increased conversion measurably.',
   },
 ];
 

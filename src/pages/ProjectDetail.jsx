@@ -1,6 +1,7 @@
 import { useParams, Navigate } from 'react-router-dom';
 import { PageShell } from '@/components/site/PageShell';
 import { Markdown } from '@/components/site/Markdown';
+import { SEO } from '@/components/site/SEO';
 import { PROJECTS } from '@/data/content';
 
 export default function ProjectDetail() {
@@ -10,11 +11,21 @@ export default function ProjectDetail() {
   if (!project) return <Navigate to="/projects" replace />;
 
   return (
-    <PageShell
-      eyebrow={`Project · ${project.date}`}
-      title={project.title}
-      backLabel="All projects"
-    >
+    <>
+      <SEO
+        title={project.title}
+        description={project.summary}
+        path={`/projects/${project.slug}`}
+        type="article"
+        publishedAt={project.date}
+        tags={project.stack}
+        image={project.image}
+      />
+      <PageShell
+        eyebrow={`Project · ${project.date}`}
+        title={project.title}
+        backLabel="All projects"
+      >
       <div className="aspect-[2/1] w-full overflow-hidden bg-zinc-100 mb-10 border border-zinc-200">
         <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
       </div>
@@ -65,5 +76,6 @@ export default function ProjectDetail() {
 
       <Markdown>{project.content}</Markdown>
     </PageShell>
+    </>
   );
 }
