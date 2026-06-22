@@ -11,6 +11,7 @@ import { Experience } from '@/components/site/Experience';
 import { Awards } from '@/components/site/Awards';
 import { Projects } from '@/components/site/Projects';
 import { Writing } from '@/components/site/Writing';
+import { Subscribe } from '@/components/site/Subscribe';
 import { Contact } from '@/components/site/Contact';
 import { Footer } from '@/components/site/Footer';
 import { SEO } from '@/components/site/SEO';
@@ -33,6 +34,7 @@ function Portfolio() {
         <Awards />
         <Projects />
         <Writing />
+        <Subscribe />
         <Contact />
       </main>
       <Footer />

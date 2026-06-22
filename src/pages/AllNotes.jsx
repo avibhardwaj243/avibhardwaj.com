@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowUpRight, Search, X } from 'lucide-react';
 import { PageShell } from '@/components/site/PageShell';
 import { SEO } from '@/components/site/SEO';
+import { Subscribe } from '@/components/site/Subscribe';
 import { WRITING } from '@/data/content';
 
 export default function AllNotes() {
@@ -163,6 +164,7 @@ export default function AllNotes() {
         </div>
       )}
     </PageShell>
+    <Subscribe variant="all-notes" />
     </>
   );
 }

@@ -9,6 +9,7 @@ export const PROFILE = {
   location: 'Gurugram, India',
   email: 'avibhardwaj243@gmail.com',
   linkedin: 'https://www.linkedin.com/in/avibhardwaj243',
+  substack: 'https://avibhardwaj.substack.com',
   resumeUrl: '/avi-bhardwaj-resume.pdf',
   openTo: ['Engineering leadership roles', 'Advisory', 'Mentoring', 'Speaking'],
   tagline:
@@ -172,25 +173,25 @@ export const EXPERIENCE = [
 ];
 
 // ---------- AWARDS / RECOGNITION ----------
-// Edit freely. Latest year first.
+// Edit freely. Latest first.
 export const AWARDS = [
   {
-    title: 'Star Performer of the Year',
-    org: 'PaisaBazaar',
-    year: '2024',
-    note: 'Recognised for leadership across lending platform modernisation and partner integration framework rollouts.',
+    title: 'Long Service Award',
+    org: 'PaisaBazaar Marketing Pvt. Ltd.',
+    year: 'Feb 2026',
+    note: 'Recognised for sustained contribution and a decade-plus tenure building PaisaBazaar’s engineering org.',
   },
   {
-    title: 'Excellence in Engineering',
-    org: 'PaisaBazaar',
-    year: '2022',
-    note: 'For sustained contribution to production stability and customer experience improvements across credit journeys.',
+    title: 'Stellar Award',
+    org: 'PaisaBazaar Marketing Pvt. Ltd.',
+    year: 'Jul – Sep 2025',
+    note: 'Quarterly recognition for outstanding impact across delivery, production stability and team leadership.',
   },
   {
-    title: 'Spot Award — Customer Impact',
-    org: 'PaisaBazaar',
-    year: '2020',
-    note: 'Led a cross-team initiative that reduced application drop-offs and increased conversion measurably.',
+    title: 'Best Team Award',
+    org: 'PaisaBazaar Marketing Pvt. Ltd.',
+    year: 'Apr 2023',
+    note: 'Won with my engineering team for cross-functional execution on a high-impact customer-facing initiative.',
   },
 ];
 
