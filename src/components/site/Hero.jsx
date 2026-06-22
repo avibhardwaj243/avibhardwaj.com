@@ -13,7 +13,7 @@ export const Hero = () => {
               Engineering Leadership · FinTech
             </span>
             <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-zinc-950 leading-[1.05]">
-              Building scalable<br className="hidden sm:block" /> FinTech products<br className="hidden sm:block" /> people can trust.
+              Scaling engineering.<br className="hidden sm:block" /> Scaling FinTech.<br className="hidden sm:block" /> Scaling people.
             </h1>
             <p className="mt-6 max-w-xl text-lg text-zinc-600 leading-relaxed">
               I’m <span className="text-zinc-950 font-medium">{PROFILE.name}</span> — {PROFILE.role} at{' '}

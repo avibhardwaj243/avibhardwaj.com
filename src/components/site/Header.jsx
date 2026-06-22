@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { NAV } from '@/constants/testIds';
 import { PROFILE } from '@/data/content';
-import { Logo } from '@/components/site/Logo';
 
 const links = [
   { id: 'about', label: 'About', testid: NAV.about },
@@ -44,10 +43,20 @@ export const Header = () => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
-          className="inline-flex items-center"
+          className="inline-flex items-center gap-2.5"
           aria-label="Avi Bhardwaj — home"
         >
-          <Logo variant="jsx" />
+          <img
+            src="/avi-logo-mark.png"
+            alt="AB monogram"
+            className="h-9 w-auto"
+            width="80"
+            height="36"
+            loading="eager"
+          />
+          <span className="hidden sm:inline font-heading text-base font-semibold tracking-tight text-zinc-950">
+            Avi <span className="text-zinc-500 font-normal">Bhardwaj</span>
+          </span>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
