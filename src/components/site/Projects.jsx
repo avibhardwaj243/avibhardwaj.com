@@ -1,7 +1,12 @@
-import { ArrowUpRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ArrowUpRight, ArrowRight } from 'lucide-react';
 import { PROJECTS } from '@/data/content';
 
 export const Projects = () => {
+  const latest = [...PROJECTS]
+    .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+    .slice(0, 3);
+
   return (
     <section id="projects" className="bg-white">
       <div className="max-w-6xl mx-auto px-6 md:px-8 py-20 md:py-28">
@@ -14,16 +19,25 @@ export const Projects = () => {
               Projects I’ve led or shaped.
             </h2>
           </div>
-          <p className="text-sm text-zinc-500 max-w-sm">
-            Snapshots from the last few years. Many details are NDA — happy to share more in
-            person.
-          </p>
+          <Link
+            to="/projects"
+            data-testid="view-all-projects"
+            className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors group"
+          >
+            View all projects
+            <ArrowRight
+              size={16}
+              className="transition-transform group-hover:translate-x-0.5"
+            />
+          </Link>
         </div>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-          {PROJECTS.map((p) => (
-            <article
-              key={p.title}
+          {latest.map((p) => (
+            <Link
+              key={p.slug}
+              to={`/projects/${p.slug}`}
+              data-testid={`home-project-${p.slug}`}
               className="group flex flex-col bg-white border border-zinc-200 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgb(0,0,0,0.05)]"
             >
               <div className="aspect-video w-full overflow-hidden bg-zinc-100 mb-6">
@@ -52,7 +66,7 @@ export const Projects = () => {
                   </span>
                 ))}
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </div>

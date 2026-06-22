@@ -6,3 +6,10 @@ dist
 *.log
 .vscode
 .idea
+.env
+.env.*
+*.env
+credentials.json
+*.pem
+*.key
+.credentials

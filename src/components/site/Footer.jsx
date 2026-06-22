@@ -8,19 +8,25 @@ export const Footer = () => {
       <div className="max-w-6xl mx-auto px-6 md:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
           <div className="md:col-span-7">
-            <div className="inline-flex items-center">
-              <span className="font-mono text-xl leading-none">
-                <span className="text-zinc-500">{'<'}</span>
-                <span className="text-blue-400 font-semibold">Avi</span>
-                <span className="text-zinc-500">{' />'}</span>
-              </span>
-              <span className="ml-3 font-heading text-xl font-semibold text-white">
-                Bhardwaj
+            <div className="inline-flex items-center gap-3">
+              <img
+                src="/avi-logo-mark-white.png"
+                alt="AB monogram"
+                className="h-9 w-auto"
+                width="80"
+                height="36"
+                loading="lazy"
+              />
+              <span className="font-heading text-xl font-semibold text-white">
+                Avi Bhardwaj
               </span>
             </div>
             <p className="mt-3 text-sm text-zinc-400 max-w-md leading-relaxed">
               {PROFILE.role} @ {PROFILE.company}. Building scalable FinTech products from{' '}
               {PROFILE.location}.
+            </p>
+            <p className="mt-2 text-[10px] font-mono tracking-[0.25em] uppercase text-zinc-500">
+              Engineering · Systems · People
             </p>
           </div>
           <div className="md:col-span-5 flex md:justify-end gap-3">

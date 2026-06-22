@@ -3,28 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#ffffff" />
-    <meta
-      name="description"
-      content="Avi Bhardwaj — Engineering Manager in FinTech. 16+ years building scalable customer-centric digital products at PaisaBazaar."
-    />
+
+    <!-- SEO -->
+    <title>Avi Bhardwaj — Engineering Manager, FinTech</title>
+    <meta name="description" content="Avi Bhardwaj — Engineering Manager at PaisaBazaar. 16+ years overall, 11+ in FinTech, building scalable customer-centric products." />
+    <meta name="keywords" content="Avi Bhardwaj, Engineering Manager, FinTech, PaisaBazaar, Lending, Node.js, Architecture, Engineering Leadership, India" />
     <meta name="author" content="Avi Bhardwaj" />
+    <link rel="canonical" href="https://avibhardwaj.com/" />
+
+    <!-- Open Graph -->
     <meta property="og:title" content="Avi Bhardwaj — Engineering Manager, FinTech" />
     <meta property="og:description" content="16+ years building scalable FinTech products. Engineering leadership, architecture and team mentorship." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://avibhardwaj.com/" />
+    <meta property="og:image" content="https://avibhardwaj.com/og-image.jpg" />
+    <meta property="og:site_name" content="Avi Bhardwaj" />
 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Avi Bhardwaj — Engineering Manager, FinTech" />
+    <meta name="twitter:description" content="16+ years building scalable FinTech products." />
+    <meta name="twitter:image" content="https://avibhardwaj.com/og-image.jpg" />
+
+    <!-- Performance: preconnect to fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image" href="/avi-bhardwaj.jpg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
 
-    <title>Avi Bhardwaj — Engineering Manager, FinTech</title>
+    <!-- Structured data: Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Avi Bhardwaj",
+      "jobTitle": "Engineering Manager",
+      "worksFor": { "@type": "Organization", "name": "PaisaBazaar" },
+      "url": "https://avibhardwaj.com",
+      "email": "mailto:avibhardwaj243@gmail.com",
+      "sameAs": ["https://www.linkedin.com/in/avibhardwaj243"],
+      "address": { "@type": "PostalAddress", "addressLocality": "Gurugram, India" },
+      "description": "Engineering leader with 16+ years overall and 11+ years in FinTech."
+    }
+    </script>
   </head>
   <body>
+    <!-- Single Page Apps for GitHub Pages: recover the path encoded by 404.html -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&');
+          }).join('?');
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location));
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
