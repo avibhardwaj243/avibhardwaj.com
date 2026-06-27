@@ -3,4 +3,13 @@ cd /Users/avibhardwaj/projects/avibhardwaj.com-main
  npm install && npm start
 
 run on 
-https://localhost:3001
+https://localhost:8001
+
+#How to deploy on Production
+1) first push to git
+2) All your changes , move to dist
+
+npm run build
+npm run deploy
+
+Wait for 2-3 mins,  and do hard referesh
