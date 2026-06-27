@@ -13,3 +13,4 @@ credentials.json
 *.pem
 *.key
 .credentials
+package-lock.json
