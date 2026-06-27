@@ -20,6 +20,7 @@ import AllProjects from '@/pages/AllProjects';
 import ProjectDetail from '@/pages/ProjectDetail';
 import AllNotes from '@/pages/AllNotes';
 import NoteDetail from '@/pages/NoteDetail';
+import Analytics from "@/components/Analytics";
 
 function Portfolio() {
   return (
@@ -46,6 +47,8 @@ function App() {
   return (
     <HelmetProvider>
       <BrowserRouter>
+        {/* Google Analytics */}
+        <Analytics />
         <Toaster position="top-right" richColors closeButton />
         <Routes>
           <Route path="/" element={<Portfolio />} />

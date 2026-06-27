@@ -1,0 +1,48 @@
+[
+  {
+    "slug": "multi-lender-orchestration",
+    "title": "Multi-Lender Orchestration",
+    "summary": "End-to-End Digital Lending Journey: Customer Data Collection, Verification, Risk Assessment, Intelligent Partner Selection, Offer Orchestration, and Sequential Loan Partner Routing",
+    "stack": ["Node.js", "Cassandra", "Redis", "Microservices"],
+    "image": "/projectDetail1_mp.png",
+    "date": "2023-09",
+    "role": "Engineering Manager",
+    "duration": "2 year",
+    "impact": [
+      "3× throughput improvement",
+      "99.95% availability",
+      "40% reduction in p99 latency"
+    ],
+    "content": "## Context\n\nThe organization required a scalable digital lending platform to streamline customer onboarding, automate credit assessment, and integrate multiple lending partners. The goal was to improve loan approvals while reducing manual intervention and providing customers with the best available offers.\n\n## What I Built\n\n- Designed an end-to-end Digital Lending Journey from customer onboarding to loan disbursal.\n- Integrated PAN Verification, EPFO, Credit Bureau, and Internal Risk Engine for real-time eligibility checks.\n- Built an Offer Curation Engine to match customers with the most suitable lending partners.\n- Developed a Partner API Orchestration Layer with sequential (waterfall) routing to automatically move applications to the next eligible lender if rejected.\n- Implemented configurable business rules for partner ranking based on eligibility, interest rates, approval probability, and business priorities.\n- Improved observability through centralized logging, monitoring, and production alerting.\n\n## Outcome\n\n- Reduced manual loan processing through complete automation.\n- Increased loan approval rates by intelligently routing applications across multiple lenders.\n- Enabled faster partner onboarding using reusable integration frameworks.\n- Improved customer experience by providing personalized loan offers with minimal turnaround time.\n- Built a scalable and maintainable architecture capable of supporting new lending partners with minimal code changes."
+  },
+  {
+    "slug": "partner-integrations",
+    "title": "Partner Integrations",
+    "summary": "Developed a unified Partner Integration Framework that seamlessly connects multiple banks and NBFCs such as Yes Bank, HDFC Bank, Aditya Birla Capital, Hero FinCorp, Poonawalla Fincorp, and others.",
+    "stack": ["Node.js", "MySQL", "REST", "Observability"],
+    "image": "/projectDetail2_mp.png",
+    "date": "2024-03",
+    "role": "Architect & Engineering Manager",
+    "duration": "5 months",
+    "impact": [
+      "Partner integration time: 6 wks → 2 wks",
+      "0 production incidents in first 90 days"
+    ],
+    "content": "## Context\n\nEach lending partner follows a unique onboarding process with different APIs, verification steps, and loan approval workflows. Managing multiple integrations independently increased development effort, onboarding time, and operational complexity.\n\n## What We Built\n\n- Developed a reusable Partner Integration Framework supporting multiple banks and NBFCs.\n- Standardized customer verification including OTP, PAN (Karza), EPFO, Credit Bureau, and Risk Assessment.\n- Built an intelligent partner selection engine to route customers to the most suitable lender based on eligibility and business rules.\n- Integrated partner-specific workflows such as Mandate Registration, Penny Drop, Selfie Verification, eKYC, vKYC, eSign, and Loan Agreement.\n- Implemented real-time API orchestration, status tracking, retries, and failure handling for reliable partner communication.\n- Designed configurable workflows, enabling rapid onboarding of new lending partners with minimal code changes.\n\n## Outcome\n\n- Unified integration for multiple lending partners through a single framework.\n- Reduced partner onboarding effort and accelerated new partner launches.\n- Improved customer experience with a seamless digital loan journey.\n- Increased loan conversion by routing customers to the most suitable lender.\n- Built a scalable, configurable, and maintainable integration architecture supporting future partner expansion."
+  },
+  {
+    "slug": "apis-monitoring-platform",
+    "title": "APIs Monitoring Platform",
+    "summary": "Built a APIs Monitoring Platform to provide real-time visibility into API health, webhook processing, latency, success rates, failures, and partner availability. ",
+    "stack": ["React.js", "Node.js", "A/B Testing", "Redis", "MySQL"],
+    "image": "/projectDetail3_mp.png",
+    "date": "2024-09",
+    "role": "Engineering Manager",
+    "duration": "1 year",
+    "impact": [
+      "+18% credit application conversion",
+      "40% drop in customer support tickets"
+    ],
+    "content": "## Context\n\nThe lending platform integrates with multiple banks and NBFCs, each exposing several APIs and webhooks. Monitoring API health, response times, failures, and partner availability manually became increasingly difficult as the number of integrations grew. A centralized observability solution was needed to ensure high availability and rapid incident detection.\n\n## What We Built\n\n- Developed a centralized monitoring platform for all partner APIs and webhooks.\n- Captured request/response metrics including Success, Failure, Rejected, Timeout, and Retry counts.\n- Measured API performance using Average Latency, P95/P99 Response Time, Throughput, and Availability.\n- Built real-time dashboards to monitor API health across all lending partners.\n- Implemented webhook monitoring to track delivery status, processing time, duplicate events, and failures.\n- Designed configurable alerting rules based on API failures, latency thresholds, timeout rates, webhook failures, and SLA breaches.\n- Enabled trend analysis with historical reports to identify recurring issues and partner performance.\n\n## Outcome\n\n- Achieved complete visibility into the health of all partner integrations.\n- Reduced Mean Time to Detect (MTTD) and Mean Time to Resolve (MTTR) production incidents.\n- Enabled proactive monitoring through automated alerts before customer impact.\n- Improved partner SLA compliance by continuously tracking API performance.\n- Reduced production downtime and accelerated troubleshooting through centralized observability."
+  }
+]
