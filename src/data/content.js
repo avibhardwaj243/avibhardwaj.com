@@ -202,5 +202,10 @@ export { default as PROJECTS } from './projects.json';
 
 // ---------- WRITING / NOTES ----------
 // Tags are free-form strings used by the search page.
-// Edit src/data/writing.json to update writing copy.
-export { default as WRITING } from './writing.json';
+// Add a .json file in src/data/writings/ — it is picked up automatically.
+const writingModules = import.meta.glob('./writings/*.json', {
+  eager: true,
+  import: 'default',
+});
+
+export const WRITING = Object.values(writingModules);

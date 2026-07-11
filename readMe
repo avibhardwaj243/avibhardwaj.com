@@ -1,6 +1,6 @@
-cd /Users/avibhardwaj/projects/avibhardwaj.com-main
+To Run on Local
+1. npm install (if not done already)
+2. npm run dev
+3. https://localhost:8001
 
- npm install && npm start
-
-run on 
-https://localhost:3001
+How to push on Production

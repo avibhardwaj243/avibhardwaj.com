@@ -44,10 +44,23 @@ export const Markdown = ({ children }) => {
               rel={props.href?.startsWith('http') ? 'noreferrer' : undefined}
             />
           ),
-          code: ({ node, ...props }) => (
-            <code
+          code: ({ inline, className, children, ...props }) =>
+            inline ? (
+              <code
+                {...props}
+                className="font-mono text-sm bg-zinc-100 text-zinc-900 px-1.5 py-0.5 rounded"
+              >
+                {children}
+              </code>
+            ) : (
+              <code {...props} className={`${className || ''} font-mono text-sm`}>
+                {children}
+              </code>
+            ),
+          pre: ({ node, ...props }) => (
+            <pre
               {...props}
-              className="font-mono text-sm bg-zinc-100 text-zinc-900 px-1.5 py-0.5 rounded"
+              className="font-mono text-sm bg-zinc-100 text-zinc-900 p-4 rounded-lg overflow-x-auto mb-6 whitespace-pre"
             />
           ),
           blockquote: ({ node, ...props }) => (
