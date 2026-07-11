@@ -4,3 +4,14 @@ To Run on Local
 3. https://localhost:8001
 
 How to push on Production
+git add .
+git commt -m "Change"
+git push orign branchName
+
+- Create PR on github
+- Merge Pr in main branch on github
+
+git checkout main
+git pull upstream main 
+npm install
+npm run deploy
