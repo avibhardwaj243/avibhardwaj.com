@@ -1,0 +1,10 @@
+{
+  "slug": "ic-to-engineering-manager",
+  "title": "From IC to Engineering Manager: what actually changed",
+  "excerpt": "Notes on the transition — what got harder, what got easier, and the mental models that helped.",
+  "tag": "Career",
+  "tags": ["career", "leadership", "management"],
+  "date": "2026-04-01",
+  "readingTime": "6 min",
+  "content": "## What got harder\n\n- **The work is asynchronous.** As an IC, a good day ends with a green CI build. As a manager, you sometimes can't tell if today's conversation will pay off in three months or never.\n- **The leverage is indirect.** Your impact is in other people's PRs, not yours.\n- **Feedback loops are slower.** A misjudged hire shows up six months later.\n\n## What got easier\n\n- **Saying no.** Once you're responsible for the team's roadmap, prioritisation stops being a debate and becomes a duty.\n- **Asking dumb questions.** Nobody expects the manager to know every line of code. That permission is freeing.\n\n## Mental models that helped\n\n1. **Your job is to make the team better than the sum of its parts.** Everything else is downstream of that.\n2. **Hire slowly, performance-manage fast.** The cost of a bad hire compounds; the cost of a hard conversation does not.\n3. **The work isn't fungible — but most of it is delegate-able.** Default to delegation; intervene only when something is truly load-bearing."
+}
