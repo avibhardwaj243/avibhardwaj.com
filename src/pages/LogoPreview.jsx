@@ -1,4 +1,5 @@
 import { Logo, LOGO_VARIANTS, CODE_VARIANTS } from '@/components/site/Logo';
+import { SEO } from '@/components/site/SEO';
 
 const Section = ({ eyebrow, title, items, startIndex = 0 }) => (
   <div className="mt-12">
@@ -42,7 +43,9 @@ const Section = ({ eyebrow, title, items, startIndex = 0 }) => (
 
 export default function LogoPreview() {
   return (
-    <div className="min-h-screen bg-zinc-50 py-12">
+    <>
+      <SEO title="Logo Concepts" description="Logo concepts and options" path="/logos" />
+      <div className="min-h-screen bg-zinc-50 py-12">
       <div className="max-w-5xl mx-auto px-6">
         <div className="mb-4">
           <span className="text-xs font-semibold tracking-[0.18em] uppercase text-zinc-500">
@@ -87,5 +90,6 @@ export default function LogoPreview() {
         </div>
       </div>
     </div>
+    </>
   );
 }
