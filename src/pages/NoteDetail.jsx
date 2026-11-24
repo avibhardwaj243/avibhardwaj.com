@@ -45,6 +45,20 @@ export default function NoteDetail() {
         </div>
       )}
 
+      {post.sourceUrl && (
+        <p className="mb-10 text-xs text-zinc-500">
+          Source:{' '}
+          <a
+            href={post.sourceUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="underline underline-offset-2 hover:text-zinc-900"
+          >
+            Original artifact
+          </a>
+        </p>
+      )}
+
       <Markdown>{post.content}</Markdown>
     </PageShell>
     </>
