@@ -9,7 +9,7 @@
   <h2>How data is used</h2>
   <p>The data is used only to provide the extension's local navigation timeline, search, copy, filtering, and export features.</p>
   <h2>Storage and sharing</h2>
-  <p>Data is stored locally in Chrome using <code>chrome.storage.local</code>. URL data is not transmitted to or shared with external servers or third parties. The extension does not use analytics, advertising, or tracking services.</p>
+  <p>Data is held temporarily in Chrome using <code>chrome.storage.session</code>, which keeps it in memory for the browser session and does not persist it to disk. The capture buffer is cleared after a successful copy, when Chrome restarts, or when the extension is reloaded. URL data is not transmitted to or shared with external servers or third parties. The extension does not use analytics, advertising, or tracking services.</p>
   <h2>Limitations</h2>
   <p>Chrome internal pages, restricted URLs, and network activity that Chrome does not expose to extensions cannot be captured.</p>
   <p><a href="index.html">Back to URL Navigation Tracker</a></p>
