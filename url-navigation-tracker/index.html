@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>URL Navigation Tracker</title>
+  <meta name="description" content="Capture observable URL navigation events, redirects, and History API changes in a local chronological timeline.">
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #102a43; background: #f7faff; }
+    body { margin: 0; }
+    main { max-width: 860px; margin: 0 auto; padding: 72px 24px; }
+    .hero { padding: 48px; border-radius: 24px; color: white; background: linear-gradient(135deg, #071d62, #1268da); box-shadow: 0 20px 60px #0b3a8850; }
+    h1 { margin: 0 0 16px; font-size: clamp(36px, 7vw, 64px); letter-spacing: -0.04em; }
+    h2 { margin-top: 48px; }
+    p, li { font-size: 18px; line-height: 1.65; }
+    .hero p { max-width: 680px; color: #e1efff; }
+    .button { display: inline-block; margin-top: 14px; padding: 12px 18px; border-radius: 10px; color: #072158; background: white; font-weight: 700; text-decoration: none; }
+    a { color: #075fc5; }
+    footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #d9e6f2; color: #58708a; }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <h1>URL Navigation Tracker</h1>
+      <p>Capture observable URL navigation events, redirects, and History API changes in a private local timeline.</p>
+      <a class="button" href="https://chrome.google.com/webstore/">Find it on the Chrome Web Store</a>
+    </section>
+
+    <h2>What it captures</h2>
+    <ul>
+      <li>Rapid navigation steps and observable redirect destinations</li>
+      <li>JavaScript navigation and History API changes</li>
+      <li>URL fragment changes and iframe navigation</li>
+      <li>Tab, frame, timestamp, transition, and request metadata when Chrome provides it</li>
+    </ul>
+
+    <h2>Local by design</h2>
+    <p>Captured URLs are stored in Chrome on your device. The extension does not send browsing data to an external server, use analytics, show ads, or modify Chrome's standard browsing history.</p>
+
+    <h2 id="support">Support</h2>
+    <p>For installation help, reload the unpacked extension from <code>chrome://extensions</code>, then open the popup on the tab being tested. Choose <strong>All tabs</strong> if a navigation opens a new tab.</p>
+
+    <footer><a href="privacy.html">Privacy policy</a></footer>
+  </main>
+</body>
+</html>
