@@ -36,6 +36,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://avibhardwaj.com/notes/building-publishing-url-navigation-tracker</loc>
+    <lastmod>2026-11-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://avibhardwaj.com/notes/cassandra-three-node-failover-test</loc>
     <lastmod>2026-10-16</lastmod>
     <priority>0.7</priority>
